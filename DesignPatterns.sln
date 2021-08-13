@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{FFFEAA1C-3F55-4315-BE0F-8ABCAFF0E319}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{FFFEAA1C-3F55-4315-BE0F-8ABCAFF0E319}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod.UnitTests", "TemplateMethod.UnitTests\TemplateMethod.UnitTests.csproj", "{51341195-D62C-48F2-B1CF-8A219581294A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethod.UnitTests", "TemplateMethod.UnitTests\TemplateMethod.UnitTests.csproj", "{51341195-D62C-48F2-B1CF-8A219581294A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy", "Strategy\Strategy.csproj", "{BA012566-B517-4C2F-95A7-711EE5F877FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy.UnitTests", "Strategy.UnitTests\Strategy.UnitTests.csproj", "{BB4C3A77-B306-46B8-B245-1A20B65562FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{51341195-D62C-48F2-B1CF-8A219581294A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51341195-D62C-48F2-B1CF-8A219581294A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51341195-D62C-48F2-B1CF-8A219581294A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA012566-B517-4C2F-95A7-711EE5F877FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA012566-B517-4C2F-95A7-711EE5F877FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA012566-B517-4C2F-95A7-711EE5F877FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA012566-B517-4C2F-95A7-711EE5F877FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB4C3A77-B306-46B8-B245-1A20B65562FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB4C3A77-B306-46B8-B245-1A20B65562FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB4C3A77-B306-46B8-B245-1A20B65562FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB4C3A77-B306-46B8-B245-1A20B65562FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
