@@ -2,6 +2,7 @@
 using Decorator.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Globalization;
 
 namespace Decorator.UnitTests.BadExample
 {
@@ -86,7 +87,7 @@ namespace Decorator.UnitTests.BadExample
             _systemUnderTests.AddItem(item);
 
             var actual = _systemUnderTests.CalculateShippingCosts();
-            var expected = Convert.ToDecimal(expectedString);
+            var expected = Convert.ToDecimal(expectedString, new NumberFormatInfo() { NumberDecimalSeparator = "." });
             Assert.AreEqual(expected, actual);
         }
 
@@ -103,7 +104,7 @@ namespace Decorator.UnitTests.BadExample
             _systemUnderTests.AddItem(item);
 
             var actual = _systemUnderTests.CalculatePaymentCommision();
-            var expected = Convert.ToDecimal(expectedString);
+            var expected = Convert.ToDecimal(expectedString, new NumberFormatInfo() { NumberDecimalSeparator = "." });
             Assert.AreEqual(expected, actual);
         }
     }
