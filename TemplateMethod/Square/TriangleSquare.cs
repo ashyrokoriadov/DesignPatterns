@@ -19,7 +19,7 @@
 
         protected override void Validate()
         {
-            IsValid = TriangleSide >= 0 || TriangleHeight >= 0;
+            IsValid = TriangleSide >= 0 && TriangleHeight >= 0;
         }
 
         protected override void CalculateShape()
