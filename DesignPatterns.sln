@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator.UnitTests", "Deco
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Singlton\Singleton.csproj", "{BB4E2F74-22B7-4550-A023-FD4B080EA3A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{B2726136-0ECB-4422-8E50-04038736EFD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "Facade\Facade.csproj", "{B2726136-0ECB-4422-8E50-04038736EFD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{383C90F5-AB34-4A29-878C-5CE91C0E6BDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{B2726136-0ECB-4422-8E50-04038736EFD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2726136-0ECB-4422-8E50-04038736EFD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2726136-0ECB-4422-8E50-04038736EFD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{383C90F5-AB34-4A29-878C-5CE91C0E6BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{383C90F5-AB34-4A29-878C-5CE91C0E6BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{383C90F5-AB34-4A29-878C-5CE91C0E6BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{383C90F5-AB34-4A29-878C-5CE91C0E6BDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
