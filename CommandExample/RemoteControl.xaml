@@ -1,0 +1,83 @@
+﻿<Window x:Class="CommandExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CommandExample"
+        xmlns:views="clr-namespace:CommandExample.UserControls.Views"
+        mc:Ignorable="d"
+        Title="Remote control" Height="500" Width="420">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="100" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="200" />
+        </Grid.RowDefinitions>
+        <Rectangle Fill="Red" Grid.Column="0" Grid.Row="0" Height="30" Width="30" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Width="140" Height="40" Background="Gray" Grid.Column="1" Grid.Row="0" Content="{Binding DeviceOneName}" 
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="ON" Command="{Binding DeviceOneTurnOn}" Grid.Column="2" Grid.Row="0" Height="40" Width="79"
+                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="OFF" Command="{Binding DeviceOneTurnOff}" Grid.Column="3" Grid.Row="0" Height="40" Width="79"
+                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Fill="Yellow" Grid.Column="0" Grid.Row="1" Height="30" Width="30" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Width="140" Height="40" Background="Gray" Grid.Column="1" Grid.Row="1" Content="{Binding DeviceTwoName}" 
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="ON" Command="{Binding DeviceTwoTurnOn}" Grid.Column="2" Grid.Row="1" Height="40" Width="79"
+                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="OFF" Command="{Binding DeviceTwoTurnOff}" Grid.Column="3" Grid.Row="1" Height="40" Width="79"
+                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Fill="Green" Grid.Column="0" Grid.Row="2" Height="30" Width="30" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Width="140" Height="40" Background="Gray" Grid.Column="1" Grid.Row="2" Content="{Binding DeviceThreeName}" 
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="ON" Command="{Binding DeviceThreeTurnOn}" Grid.Column="2" Grid.Row="2" Height="40" Width="79"
+                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="OFF" Command="{Binding DeviceThreeTurnOff}" Grid.Column="3" Grid.Row="2" Height="40" Width="79"
+                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Fill="Blue" Grid.Column="0" Grid.Row="3" Height="30" Width="30" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Width="140" Height="40" Background="Gray" Grid.Column="1" Grid.Row="3" Content="{Binding DeviceFourName}" 
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="ON" Command="{Binding DeviceFourTurnOn}" Grid.Column="2" Grid.Row="3" Height="40" Width="79"
+                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="OFF" Command="{Binding DeviceFourTurnOff}" Grid.Column="3" Grid.Row="3" Height="40" Width="79"
+                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Fill="DeepPink" Grid.Column="0" Grid.Row="4" Height="30" Width="30" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Width="140" Height="40" Background="Gray" Grid.Column="1" Grid.Row="4" Content="{Binding DeviceFiveName}" 
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="ON" Command="{Binding DeviceFiveTurnOn}" Grid.Column="2" Grid.Row="4" Height="40" Width="79"
+                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="OFF" Command="{Binding DeviceFiveTurnOff}" Grid.Column="3" Grid.Row="4" Height="40" Width="79"
+                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <views:LogConsole x:Name="LogConsoleControl" DataContext="{Binding LogConsole}"
+                          Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="4"/>
+    </Grid>
+</Window>
