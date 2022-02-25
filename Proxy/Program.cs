@@ -63,7 +63,7 @@ namespace Proxy
             var addResult = _addressRepo.Add(address);
             Console.WriteLine($"Add result: {addResult}");
 
-            var updatedResult = _addressRepo.Add(addressToUpdate);
+            var updatedResult = _addressRepo.Update(addressToUpdate);
             Console.WriteLine($"Update result: {updatedResult}");
 
             var getResult = _addressRepo.Get(address.Id);
@@ -103,15 +103,16 @@ namespace Proxy
 
         private static void ResolveDependencies()
         {
-            Console.WriteLine("Registrering dependencies...");
+            Console.WriteLine("Resolving dependencies...");
 
             using (var scope = Container.BeginLifetimeScope())
             {
                 _addressRepo = scope.ResolveNamed <IRepo<Address, Guid>>(REPO_ACCESS_CONTROLL);
+                //_addressRepo = scope.ResolveNamed<IRepo<Address, Guid>>(REPO_VALDIATOR_PROXY);
                 _userContext = scope.Resolve<IUserContext>();
             }
 
-            Console.WriteLine("Dependencies were registred.");
+            Console.WriteLine("Dependencies were resolved.");
         }
 
         private static IContainer _container;
