@@ -28,7 +28,7 @@ namespace Adapter
             Console.WriteLine();
 
             var sampleClassUsingAdapter = new SampleClassUsingIFileWriterInterface(publisherAdapter);
-            sampleClass.Run(3);
+            sampleClassUsingAdapter.Run(3);
         }
     }
 
